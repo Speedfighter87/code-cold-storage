@@ -1,0 +1,41 @@
+.spinner {
+    width: 100px;
+    height: 100px;
+    background-color: #f15;
+    border-radius: 50%;
+    padding: 0%;
+}
+
+.indication {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: inset 3px 0px 0 0 #fff;
+    animation: spinny 1s linear infinite;
+    transition: all 0.5s ease-out;
+    padding: 0%;
+}
+
+.indication:hover {
+    /* animation: none;
+    box-shadow: none;
+    border-radius: 0%; */
+    box-shadow: 0px 0px 0 0 rgba(0, 0, 0, 0%);
+}
+
+@keyframes spinny {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+body {
+    background-color: #141D2A;
+    height: 200px;
+    width: 200px;
+}
